@@ -1,0 +1,20 @@
+# Compiled binary files
+*.exe
+*.o
+*.out
+
+# Executables
+/bin
+/*.exe
+
+# Go build artifacts
+*.exe
+*.test
+*.prof
+*.out
+
+# Ignore system files
+.DS_Store
+
+# Ignore go.mod's cache
+/go.sum

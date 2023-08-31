@@ -2,12 +2,12 @@ package main
 
 import (
 	"flag"
-	"fmt"
-	"os"
+
+	"github.com/CarsonWebster/YowerzSecSuite/pkgs/passwordchecker"
 )
 
 func main() {
-	fmt.Println("Hello, World!")
+	// fmt.Println("Hello, World!")
 	// argsWithProg := os.Args
 	// argsWithoutProg := os.Args[1:]
 	// fmt.Println(argsWithProg)
@@ -23,10 +23,7 @@ func main() {
 		password = *aliasPasswordFlag
 	}
 
-	if *passwordFlag != "" {
-		fmt.Println("Password is", password)
-	} else {
-		fmt.Println("Usage: ./YowerzSecSuite [-P <password>] [--password-check <password>]")
-		os.Exit(1)
+	if password != "" {
+		passwordchecker.CheckPasswordStrength(password)
 	}
 }
