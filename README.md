@@ -9,10 +9,13 @@ Before you begin using YowerzSecSuite, you'll need to install Golang and set up 
 Once you have Go installed, you can install YowerzSecSuite by running:
 
 ```bash
-go get github.com/CarsonWebster/YowerzSecSuite
+git clone https://github.com/CarsonWebster/YowerzSecSuite.git
+cd YowerzSecSuite
+make build
 ```
 
-This will download and install the YowerzSecSuite tool and its dependencies.
+After the build is complete, you can find the executable binary in the bin directory within the YowerzSecSuite project folder.
+You can now use YowerzSecSuite by running the executable binary in your terminal.
 
 ## Usage
 
@@ -69,6 +72,16 @@ YowerzSecSuite -encode-base64 HelloWorld
 ```bash
 YowerzSecSuite -decode-base64 SGVsbG9Xb3JsZA
 ```
+
+## Planned Features
+
+- TCP Scanner/Spoofer: Implement a module for scanning and spoofing TCP connections for network reconnaissance and testing purposes.
+
+- Packet Logger/Spoofer: Develop a packet logger and spoofer for monitoring and manipulating network traffic.
+
+- Bytecode Generator: Create a bytecode generation module for scripting and automation tasks in cybersecurity assessments.
+
+- Command and Control Center: Design a centralized control center for managing and orchestrating various penetration testing activities and tools.
 
 ## Contribute
 
